@@ -1,8 +1,13 @@
 source "https://rubygems.org"
+group :test do
 gem "rspec"
-gem "sinatra"
-gem "awesome_print"
+end
+
+gem "sinatra", "2.0.2"
+gem "awesome_print", git: "git@github.com:awesome-print/awesome_print.git"
 gem 'nokogiri'
+gem "hashie"
+gem "octokit", "~> 2.0"
 
 group :development do
   gem "pry"
